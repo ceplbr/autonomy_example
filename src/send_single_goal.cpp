@@ -5,24 +5,24 @@
 
 typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
 
-/* Station BR 301 */
-float dock_position_x = -0.578879380226; 
-float dock_position_y = 0;
-float dock_quat_x = 0; 
-float dock_quat_y = 0;
-float dock_quat_z = 0; 
-float dock_quat_w = 1;
+/* Target coordinates */
+float position_x = -0.578879380226; 
+float position_y = 0;
+float quat_x = 0; 
+float quat_y = 0;
+float quat_z = 0; 
+float quat_w = 1;
 
 int main(int argc, char** argv){
 	ros::init(argc, argv, "send_simple_goal");
 	ros::NodeHandle nh("~");
-	double param_x = (double)dock_position_x;
-	double param_y = (double)dock_position_y;
+	double param_x = (double)position_x;
+	double param_y = (double)position_y;
 
-	double param_qx = (double)dock_quat_x;
-	double param_qy = (double)dock_quat_y;
-	double param_qz = (double)dock_quat_z;
-	double param_qw = (double)dock_quat_w;
+	double param_qx = (double)quat_x;
+	double param_qy = (double)quat_y;
+	double param_qz = (double)quat_z;
+	double param_qw = (double)quat_w;
 
 	double param_a = 0;
 
