@@ -1,5 +1,7 @@
 ## autonomy_example
 Examples of sending goals to move_base
+
+Author: MC
 ### Files:
 - send_fixed_goal      - Sends goal to `/move_base_simple/goal`
 - send_fixed_goal.py   - Python version of code script above
